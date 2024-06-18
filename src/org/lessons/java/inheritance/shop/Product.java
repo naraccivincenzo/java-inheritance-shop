@@ -3,13 +3,13 @@ package org.lessons.java.inheritance.shop;
 import java.util.Random;
 
 public class Product {
-    protected final int id;
+    private final int id;
     Random random = new Random();
-    protected String name;
-    protected String brand;
-    protected float price;
-    protected int vat;
-    protected float grossPrice = 0;
+    private String name;
+    private String brand;
+    private float price;
+    private int vat;
+    private float grossPrice = 0;
 
     public Product(String name, String brand, float price, int vat) {
         this.id = Math.abs(random.nextInt());
