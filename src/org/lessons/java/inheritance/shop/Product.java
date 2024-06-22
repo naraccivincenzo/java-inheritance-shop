@@ -150,4 +150,14 @@ public class Product {
     public String completeName() {
         return this.id + "-" + this.name;
     }
+
+    @Override
+    public String toString() {
+        return "id=" + id + ", " + "\n" +
+                "name=" + name + ", " + "\n" +
+                "brand=" + brand + ", " + "\n" +
+                "price=" + price + ", " + "\n" +
+                "VAT=" + vat + "%, " + "\n" +
+                "grossPrice=" + grossPrice;
+    }
 }

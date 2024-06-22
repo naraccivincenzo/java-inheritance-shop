@@ -35,4 +35,14 @@ public class Smartphone extends Product {
     public void setRom(int rom) {
         this.rom = rom;
     }
+
+    @Override
+    public String toString() {
+        return "Smartphone {" + "\n" +
+                super.toString() + "\n" +
+                "imei=" + imei + ", " + "\n" +
+                "ram=" + ram + ", " + "\n" +
+                "rom=" + rom +
+                " }" + "\n";
+    }
 }
